@@ -22,8 +22,8 @@
         <micronaut.data.version>3.8.1</micronaut.data.version>
         <exec.mainClass>com.kikopolis.Application</exec.mainClass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.api.version>2.0.3</slf4j.api.version>
-        <slf4j.reload4j.version>2.0.3</slf4j.reload4j.version>
+        <slf4j.api.version>2.0.4</slf4j.api.version>
+        <slf4j.reload4j.version>2.0.4</slf4j.reload4j.version>
         <log4j.core.version>2.19.0</log4j.core.version>
     </properties>
 
@@ -61,6 +61,12 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
             <groupId>io.micronaut.data</groupId>
             <artifactId>micronaut-data-jdbc</artifactId>
             <scope>compile</scope>
@@ -70,12 +76,6 @@
             <artifactId>micronaut-jdbc-hikari</artifactId>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>jakarta.annotation</groupId>
-            <artifactId>jakarta.annotation-api</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

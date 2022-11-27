@@ -25,6 +25,7 @@
         <slf4j.api.version>2.0.4</slf4j.api.version>
         <slf4j.reload4j.version>2.0.4</slf4j.reload4j.version>
         <log4j.core.version>2.19.0</log4j.core.version>
+        <hamcrest.version>2.2</hamcrest.version>
     </properties>
 
     <repositories>
@@ -97,21 +98,30 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <scope>test</scope>
+            <version>${hamcrest.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.api.version}</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-reload4j</artifactId>
             <version>${slf4j.reload4j.version}</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j.core.version}</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
